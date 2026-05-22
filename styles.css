@@ -244,6 +244,85 @@ header .container {
     margin: 0.5rem 0;
 }
 
+/* About page grid and stats */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-text h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00aaff;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.about-text li::before {
+    content: "✓";
+    color: #66ff66;
+    position: absolute;
+    left: 0;
+}
+
+.about-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 4px solid #00aaff;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .stat-card {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
 .contact-form-section {
     padding: 3rem 0;
     background: #0a0a0a;
