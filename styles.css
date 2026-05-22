@@ -68,7 +68,6 @@ header .container {
     color: white;
 }
 
-/* Hero section – full viewport height, but page scrolls */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -91,7 +90,6 @@ header .container {
     margin-bottom: 2rem;
 }
 
-/* Rest of your sections (services preview, features, etc.) */
 .services-preview, .services-full {
     padding: 4rem 0;
     background: #0a0a0a;
@@ -131,15 +129,19 @@ header .container {
 }
 
 .service-card h3 {
+    color: #ff3333;   
     margin-bottom: 1rem;
-    color: #ffffff;
+}
+
+.feature-card h3 {
+    color: #66ff66;   
+    margin-bottom: 1rem;
 }
 
 .service-card p {
     color: #dddddd;
 }
 
-/* Features */
 .features {
     background: #0f0f0f;
     padding: 4rem 0;
@@ -158,16 +160,20 @@ header .container {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     color: #ffffff;
+    min-height: 280px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .feature-card p {
     color: #dddddd;
 }
 
-/* CTA Form Section */
+
 .cta-form {
     padding: 4rem 0;
-    background: #001f3f;  /* navy blue for CTA section background */
+    background: #003366;  
     color: white;
 }
 
