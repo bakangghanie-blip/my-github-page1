@@ -431,3 +431,16 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+body.home-page {
+    background-image: url('images/cyber-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;   
+    background-repeat: no-repeat;
+}
+
+body.home-page main {
+    background-color: rgba(0, 0, 0, 0.6);   
+    padding: 2rem 0;
+    border-radius: 8px;
+}
