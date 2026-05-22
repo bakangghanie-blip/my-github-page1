@@ -64,28 +64,43 @@ header .container {
 }
 
 /* Hero */
-.hero {
+/* Fullscreen hero - no scroll */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* removes scrollbar */
+}
+
+.fullscreen-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero.fullscreen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 5rem 0;
     background: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+.hero.fullscreen .container {
+    width: 100%;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
-    color: #ffffff;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    color: #cccccc;
-    margin-bottom: 2rem;
-}
-.hero {
-    text-align: center;
-    padding: 5rem 0;
-    background: #1a1a1a;
-    border-bottom: 2px solid #333333;   /* ← add this line */
+    font-size: 1.5rem;
 }
 /* Buttons */
 .btn {
