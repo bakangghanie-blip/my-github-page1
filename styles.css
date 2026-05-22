@@ -81,7 +81,12 @@ header .container {
     color: #cccccc;
     margin-bottom: 2rem;
 }
-
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+    background: #1a1a1a;
+    border-bottom: 2px solid #333333;   /* ← add this line */
+}
 /* Buttons */
 .btn {
     display: inline-block;
