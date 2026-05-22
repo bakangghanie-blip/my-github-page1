@@ -405,4 +405,11 @@ footer {
     .service-grid, .features-grid {
         grid-template-columns: 1fr;
     }
+    /* About page */
+.about-content ul {
+    margin: 1rem 0 0 2rem;
+}
+.about-content li {
+    margin: 0.5rem 0;
+}
 }
