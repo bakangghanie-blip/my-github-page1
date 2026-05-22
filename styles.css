@@ -160,10 +160,16 @@ header .container {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     color: #ffffff;
-    min-height: 280px;   
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;  
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .feature-card p {
@@ -238,7 +244,6 @@ header .container {
     margin: 0.5rem 0;
 }
 
-/* Contact Form Page */
 .contact-form-section {
     padding: 3rem 0;
     background: #0a0a0a;
@@ -279,10 +284,9 @@ header .container {
     margin-top: 0.25rem;
 }
 
-/* Page Header */
 .page-header {
     background: #0f0f0f;
-    padding: 3rem 0;
+    padding: 1.5rem 0;   /* was 3rem, now smaller */
     text-align: center;
 }
 
@@ -296,22 +300,19 @@ header .container {
     color: #cccccc;
 }
 
-/* Solutions full page */
 .solutions-full {
     padding: 3rem 0;
     background: #0a0a0a;
 }
 
-/* Footer */
 footer {
-    background: #001f3f;  /* navy blue footer */
+    background: #001f3f;  
     color: #aaaaaa;
     text-align: center;
     padding: 2rem 0;
     margin-top: 2rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -325,6 +326,12 @@ footer {
         box-shadow: 0 5px 10px rgba(0,0,0,0.3);
     }
     
+@media (max-width: 768px) {
+    .page-header {
+        padding: 1rem 0;
+    }
+}
+
     .nav-links.active {
         display: flex;
     }
