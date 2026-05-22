@@ -115,7 +115,6 @@ header .container {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #0a0a0a;
     padding: 2rem;
 }
 
@@ -262,7 +261,6 @@ header .container {
     width: 100%;
 }
 
-/* About page */
 .about-content {
     background: #0a0a0a;
     padding: 3rem 0;
@@ -285,7 +283,6 @@ header .container {
     margin: 0.5rem 0;
 }
 
-/* About page grid and stats */
 .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -406,7 +403,7 @@ header .container {
 
 .page-header {
     background: #0f0f0f;
-    padding: 1.5rem 0;   /* was 3rem, now smaller */
+    padding: 1.5rem 0;   
     text-align: center;
 }
 
@@ -477,14 +474,6 @@ body.home-page {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;   
-    background-repeat: no-repeat;
-}
-
-body.home-page {
-    background-image: url('images/cyber-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
